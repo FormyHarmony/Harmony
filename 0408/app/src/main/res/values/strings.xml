@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">0408</string>
+    <string name="email">請輸入信箱</string>
+    <string name="mail">請輸入電話</string>
+    <string name="adress">請輸入地址</string>
+    <string name="execute">execute</string>
+</resources>
