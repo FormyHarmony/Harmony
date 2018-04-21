@@ -1,0 +1,23 @@
+ 
+<h1>自我介紹</h1>
+<table border="" class="table">
+<tr>
+	<th>
+	名字
+	</th>
+	<th>
+	電話
+	</th>
+	<th>
+	地址
+	</th>
+	</tr>
+{% for i in introduce%}
+<tr>
+<td>{{i.name}}</td>
+<td>{{i.birthday}}</td>
+<td>{{i.adress}}</td>
+</tr>
+{% endfor %}
+</table>
+

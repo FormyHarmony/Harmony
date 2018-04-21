@@ -1,36 +1,26 @@
  
-<h1 class="text-center">美食菜單</h1>
+<h1 class="text-center">單</h1>
 <div class="container-fluid">
-{% for r in restaurents %}
-<h2>{{r.name}}</h2>
-{% if r.food_set.all %}
-<p>本餐廳有{{r.food_set.all|length}}道菜</p>
+{
 <table class="table">
 <tr>
 	<th>
-	菜名
+	名字
 	</th>
 	<th>
-		價格
+		電話
 	</th>
 	<th>
-		辣不甜
+		地址
 	</th>
-<th>
-		註解
-	</th>
-</tr>
-{% for food in r.food_set.all %}
+
 <tr>
-	<td>{{food.name}}</td>
-<td>{{food.price}}</td>
-<td>{% if food.is_spicy %}辣{% else %}不辣{% endif %}</td>
-<td>{{food.comment}}</td>
+	<td>{{Introduce.name}}</td>
+<td>{{Introduce.phone_number}}</td>
+
+<td>{{Introduce.address}}</td>
 </tr>
-{% endfor %}
+
 
 </table>
-{% else %}
-<p>本餐廳沒有賣東西</p>
-{% endif %}
-{% endfor %}
+
