@@ -1,0 +1,19 @@
+<h1>母親節</h1>
+
+
+	<th>
+	<form action="a">
+  請輸入文字: <input type="text" name="q"><br>
+  <input type="submit" value="Submit">
+</form>
+	</th>
+
+
+{% for q in Qustion%}
+
+<td>{{q.question_text}}</td>
+
+
+{% endfor %}
+</table>
+
